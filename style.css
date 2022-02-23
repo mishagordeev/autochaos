@@ -2,6 +2,13 @@ body {
     background-color: white;
 }
 
+.root {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    cursor: pointer;
+}
+
 .board {
     position: absolute;
     z-index: 1;
@@ -10,4 +17,9 @@ body {
 .shapes {
     position: absolute;
     z-index: 2;
+}
+
+.target {
+    position: absolute;
+    z-index: 3;
 }

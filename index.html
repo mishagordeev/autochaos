@@ -6,14 +6,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div style="position: relative">
+        <div class="root">
             <canvas id="board" class="board" width="1000" height="1000"></canvas>
             <canvas id="shapes" class="shapes" width="1000" height="1000"></canvas>
+            <canvas id="target" class="target" onclick="targetClick()" width="50" height="50"></canvas>
         </div>
         <script src="draw_board.js"></script>
         <script src="draw_shape.js"></script>
         <script src="levels.js"></script>
         <script src="load_level.js"></script>
+        <script src="clear_canvas.js"></script>
+        <script src="target_click.js"></script>
         <script src="init.js"></script>
         <script src="main.js"></script>
     </body>

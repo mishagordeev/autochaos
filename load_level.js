@@ -7,6 +7,8 @@ function loadLevel(levelNumber) {
         let y = level.coordinates[i][1]
         if (i == targetIndex) {
             drawShape('shapes', level.target.type, level.target.color, x, y)
+            const target = document.getElementById("target")
+            target.style.cssText = `left: ${x-25}px; top: ${y-25}px;`
         } else {
             let randomShape = Math.floor(Math.random() * level.shapes.length)
             drawShape('shapes', level.shapes[randomShape].type, level.shapes[randomShape].color, x, y)

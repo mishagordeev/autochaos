@@ -1,6 +1,7 @@
 function init() {
-    
-    drawBoard('board')
+    showLevelNumber(level)
+    showScore(score)
+    showTime(time)
     loadLevel(0)
 
 }

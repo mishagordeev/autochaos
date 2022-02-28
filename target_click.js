@@ -1,6 +1,9 @@
 function targetClick() {
     clearCanvas('board')
     clearCanvas('shapes')
-    drawBoard('board')
+    time += 5
+    showTime(time)
+    score += 5
+    showScore(score)
     loadLevel(0)
 }

@@ -6,17 +6,49 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="root">
-            <canvas id="board" class="board" width="1000" height="1000"></canvas>
-            <canvas id="shapes" class="shapes" width="1000" height="1000"></canvas>
-            <canvas id="target" class="target" onclick="targetClick()" width="50" height="50"></canvas>
+        <div id="first_scene" class="first_scene">
+            <p>This game is about finding <span style="color: orange;">a piece</span> of stability in forthcoming chaos</p>
+            <p style="color: deepskyblue;">-</p>
+            <p><a onclick="startClick()">Start</a></p>
+            <p><a>Score board</a></p>
         </div>
-        <script src="draw_board.js"></script>
-        <script src="draw_shape.js"></script>
+        <div id="main_scene" class="main_scene">
+            <div class="info">
+                <div class="side_block left">
+                    <p id="level_number_view" class="level_number_view">12</p>
+                </div>                
+                <div class="center_block">
+                    <p id="level_ending_view">th level</p>
+                    <p style="float: left;">Find</p>
+                </div>
+                <div class="center_block"">
+                    <p style="text-align: right;">Time</p>
+                    <p style="text-align: right;">Score</p>
+                </div> 
+                <div class="side_block right">
+                    <p id="time_view" style="font-weight: bold;">0</p>
+                    <p id="score_view" style="font-weight: bold;">0</p>
+                </div>  
+            </div>         
+            <div class="level">
+                <canvas id="board" class="board" width="660" height="720"></canvas>
+                <canvas id="shapes" class="shapes" width="660" height="720"></canvas>
+                <canvas id="target" class="target" onclick="targetClick()" width="50" height="50"></canvas>
+            </div>
+        </div>
         <script src="levels.js"></script>
+        
+        <script src="view/show_level_number.js"></script>
+        <script src="view/show_score.js"></script>
+        <script src="view/show_time.js"></script>
+        <script src="view/start_click.js"></script>
+        <script src="view/draw_shape.js"></script>  
+        <script src="view/clear_canvas.js"></script>
+
         <script src="load_level.js"></script>
-        <script src="clear_canvas.js"></script>
+        <script src="tik_time.js"></script>
         <script src="target_click.js"></script>
+
         <script src="init.js"></script>
         <script src="main.js"></script>
     </body>

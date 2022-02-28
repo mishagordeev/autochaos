@@ -1,5 +1,6 @@
 function loadLevel(levelNumber) {
     const level = levels[levelNumber]
+    showLevelNumber(level.level)
     const targetIndex = Math.floor(Math.random() * level.coordinates.length)
     
     for (let i = 0; i < level.coordinates.length; i++) {
@@ -7,6 +8,7 @@ function loadLevel(levelNumber) {
         let y = level.coordinates[i][1]
         if (i == targetIndex) {
             drawShape('shapes', level.target.type, level.target.color, x, y)
+            // drawShape('task', level.target.type, level.target.color, 40, 43)
             const target = document.getElementById("target")
             target.style.cssText = `left: ${x-25}px; top: ${y-25}px;`
         } else {

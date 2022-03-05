@@ -83,6 +83,12 @@ a:hover {
     display: none;
 }
 
+.last_scene {
+    margin: 0 auto;
+    width: 650px;
+    display: none;
+}
+
 .board {
     position: absolute;
     z-index: 1;

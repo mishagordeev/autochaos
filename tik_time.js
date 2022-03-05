@@ -1,10 +1,11 @@
 var x = setInterval(function() {
 
     if (time < 0) {
-        clearInterval(x);
+        clearInterval(x)
+        showLastScene()
     } else {
         showTime(time)
-        time--;
+        time--
     }
     
 }, 1000);

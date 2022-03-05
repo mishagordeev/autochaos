@@ -40,8 +40,14 @@
                 <canvas id="target" class="target" onclick="targetClick()" width="50" height="50"></canvas>
             </div>
         </div>
+        <div id="last_scene" class="last_scene">
+            <p>Game Over</p>
+            <p style="color: deepskyblue;">-</p>
+            <p id="final_score_view">0</p>
+        </div>
         <script src="levels.js"></script>
         
+        <script src="view/show_last_scene.js"></script>
         <script src="view/show_level_number.js"></script>
         <script src="view/show_score.js"></script>
         <script src="view/show_time.js"></script>

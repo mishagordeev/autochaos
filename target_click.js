@@ -4,7 +4,18 @@ function targetClick() {
     clearCanvas('task')
     time += 5
     showTime(time)
-    score += 5
+    clearInterval(score_timer)
+
+    if (score_counter < 100) {
+        score += 100 - score_counter
+    }
+    if (score_counter < 1000 && score_counter >= 100) {
+        score += 10 - Math.floor(score_counter / 100)
+    }
+    if (score_counter >= 1000) {
+        score1 += 0
+    }
+
     showScore(score)
     loadLevel(0)
 }

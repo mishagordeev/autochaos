@@ -4,6 +4,7 @@ const levels = JSON.parse(levelsString)
 let level = 1
 let time = 10
 let score = 0
+let score_counter = 0
 
 init();
 

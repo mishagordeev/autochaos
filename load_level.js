@@ -16,4 +16,6 @@ function loadLevel(levelNumber) {
             drawShape('shapes', level.shapes[randomShape].type, level.shapes[randomShape].color, x, y)
         }
     }
+    score_counter = 0
+    score_timer = setInterval(function() {score_counter++}, 100);
 }

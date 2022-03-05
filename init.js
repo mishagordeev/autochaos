@@ -3,5 +3,4 @@ function init() {
     showScore(score)
     showTime(time)
     loadLevel(0)
-
 }

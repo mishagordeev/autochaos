@@ -14,20 +14,24 @@
         </div>
         <div id="main_scene" class="main_scene">
             <div class="info">
-                <div class="side_block left">
-                    <p id="level_number_view" class="level_number_view">12</p>
+                <div class="info_block">
+                    <p style="text-align: center;">Level</p>
+                    <p id="level_number_view" class="indicator">1</p>
                 </div>                
-                <div class="center_block">
-                    <p id="level_ending_view">th level</p>
-                    <p style="float: left;">Find</p>
+                <div class="info_block">
+                    <p style="text-align: center;">Find</p>
+                    <div class="task">
+                        <canvas id="task" width="50" height="50"></canvas>
+                    </div>
                 </div>
-                <div class="center_block"">
-                    <p style="text-align: right;">Time</p>
-                    <p style="text-align: right;">Score</p>
+                <div class="info_block">
+                    <p style="text-align: center;">Score</p>
+                    <p id="score_view" class="indicator">0</p>
+                    
                 </div> 
-                <div class="side_block right">
-                    <p id="time_view" style="font-weight: bold;">0</p>
-                    <p id="score_view" style="font-weight: bold;">0</p>
+                <div class="info_block">
+                    <p style="text-align: center;">Time</p>
+                    <p id="time_view" class="indicator">0</p>
                 </div>  
             </div>         
             <div class="level">
@@ -38,7 +42,6 @@
         </div>
         <script src="levels.js"></script>
         
-        <script src="view/show_level_number.js"></script>
         <script src="view/show_score.js"></script>
         <script src="view/show_time.js"></script>
         <script src="view/start_click.js"></script>

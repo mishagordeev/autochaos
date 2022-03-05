@@ -8,7 +8,7 @@ function loadLevel(levelNumber) {
         let y = level.coordinates[i][1]
         if (i == targetIndex) {
             drawShape('shapes', level.target.type, level.target.color, x, y)
-            // drawShape('task', level.target.type, level.target.color, 40, 43)
+            drawShape('task', level.target.type, level.target.color, 25, 25)
             const target = document.getElementById("target")
             target.style.cssText = `left: ${x-25}px; top: ${y-25}px;`
         } else {
